@@ -16,9 +16,12 @@ class HouseList extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            //Image
             Container(
               child: Image.asset("assets/house.jpg"),
             ),
+
+            //Price and like button
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -31,8 +34,12 @@ class HouseList extends StatelessWidget {
                 const Icon(Icons.headphones),
               ],
             ),
+
+            //Location
             const Text("St. Crystal"),
             const Text("Highland Lake, FL"),
+
+            //Icons
             Row(
               children: const [
                 Icon(Icons.bed),
